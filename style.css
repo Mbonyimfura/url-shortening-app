@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -239,11 +240,15 @@ input {
 footer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   background: var(--very-dark-blue);
+ 
 }
 .footer-links {
   margin-top: 2rem;
+  margin-bottom: 2rem ;
+
+ 
 }
 ul li {
   color: var(--grayish-violet);
@@ -257,13 +262,14 @@ ul :nth-child(1) {
 .footer-social {
   display: flex;
   justify-content: space-between;
+  margin-top: -7.5rem;
 }
 .social-links {
   padding: 0.4rem 0.5rem;
   margin-top: 2rem;
 }
 .logo {
-  margin-top: 2rem;
+  margin-top: -5.5rem;
 }
 .sm {
   display: none;
@@ -277,11 +283,11 @@ ul :nth-child(1) {
   left: 2rem;
 }
 .error-input {
-  border: 1px solid red;
-  color: red;
+  border: 1px solid var(--red);
+  color: var(--red);
 }
 input.error-input::placeholder {
-  color: red;
+  color: var(--red);
 }
 
 .result {
@@ -494,8 +500,13 @@ input.error-input::placeholder {
   footer {
     flex-direction: column;
   }
+  .logo {
+    margin-top: 1.5rem;
+  }
 
   .footer-links {
+    flex-direction: column;
+    align-items: center;
     margin-top: 1.5rem;
   }
 
@@ -504,9 +515,9 @@ input.error-input::placeholder {
   }
 
   .footer-social {
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 5rem;
+   display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
   }
 
   .footer-social img {
@@ -514,6 +525,7 @@ input.error-input::placeholder {
   }
 
   .social-links {
-    margin: .5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 }
